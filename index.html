@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Street Rush</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-wrapper">
+
+        <header>
+            <h1>📈 WALL STREET RUSH</h1>
+            <p>Build your portfolio. Avoid the crash.</p>
+        </header>
+
+        <div class="stats">
+            <div>
+                <span class="label">SCORE</span>
+                <span id="score">0</span>
+            </div>
+
+            <div>
+                <span class="label">PORTFOLIO</span>
+                <span id="portfolio">$0</span>
+            </div>
+
+            <div>
+                <span class="label">LEVEL</span>
+                <span id="level">1</span>
+            </div>
+
+            <div>
+                <span class="label">LIVES</span>
+                <span id="lives">❤️❤️❤️</span>
+            </div>
+        </div>
+
+        <div id="gameArea">
+
+            <div id="startScreen" class="screen">
+                <h2>WELCOME TO WALL STREET</h2>
+
+                <p>
+                    Catch profitable stocks and build your portfolio.
+                    Avoid market crashes or you'll lose a life.
+                </p>
+
+                <div class="instructions">
+                    <p>📈 Catch stocks = +$100</p>
+                    <p>💎 Catch bonuses = +$500</p>
+                    <p>📉 Hit a crash = lose a life</p>
+                </div>
+
+                <p class="controls">
+                    Move with ← → or A / D
+                </p>
+
+                <button id="startButton">START TRADING</button>
+            </div>
+
+            <div id="player">
+                <div class="trader">💼</div>
+            </div>
+
+            <div id="gameOverScreen" class="screen hidden">
+                <h2>MARKET CLOSED</h2>
+
+                <p>Your portfolio finished at</p>
+
+                <h3 id="finalPortfolio">$0</h3>
+
+                <p>
+                    High Score:
+                    <span id="highScore">0</span>
+                </p>
+
+                <button id="restartButton">TRADE AGAIN</button>
+            </div>
+
+        </div>
+
+        <div class="bottom-info">
+            <span>🟢 BULL MARKET</span>
+            <span>WALL STREET TERMINAL</span>
+            <span id="marketStatus">MARKET OPEN</span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
